@@ -2,7 +2,7 @@
 
 An Android application that captures camera frames, processes them using OpenCV in C++ (via JNI), and displays the processed output using OpenGL ES. Additionally includes a TypeScript-based web viewer to demonstrate bridging native processing results to a web interface.
 
-## 📋 Features
+## Features
 
 ### Android App
 - Real-time camera feed capture using Camera2 API
@@ -17,7 +17,7 @@ An Android application that captures camera frames, processes them using OpenCV 
 - Frame statistics display (FPS, resolution, processing time)
 - Simulated streaming from Android app
 
-## 🏗️ Architecture
+## Architecture
 
 ```mermaid
 graph TD
@@ -36,7 +36,7 @@ graph TD
 - `/gl` - OpenGL renderer classes
 - `/web` - TypeScript web viewer
 
-## 🚀 Getting Started
+## Getting Started
 
 ### Prerequisites
 
@@ -90,7 +90,7 @@ graph TD
    npm start
    ```
 
-## 🧪 Testing
+## Testing
 
 ### Android Tests
 ```bash
@@ -102,53 +102,6 @@ graph TD
 cd web
 npm test
 ```
-
-## 📸 Screenshots
-
-![Android App Interface](screenshots/android-app.png)
-*Android app showing edge detection output*
-
-![Web Viewer Interface](screenshots/web-viewer.png)
-*Web viewer displaying processed frames*
-
-## 🎯 Performance
-
-- Real-time processing at 15-30 FPS (depending on device)
-- Frame processing time: 10-30ms
-- Memory efficient with proper resource management
-
-## 🛠️ Development
-
-### Android Development
-
-1. **Adding new OpenCV algorithms**
-   - Modify `jni/ImageProcessor.cpp`
-   - Update native method signatures in `ImageProcessorNative.java`
-
-2. **Adding new OpenGL effects**
-   - Modify shaders in `OpenGLRenderer.java`
-   - Update vertex/fragment shader code
-
-### Web Development
-
-1. **Run development server**
-   ```bash
-   cd web
-   npm run dev
-   ```
-
-2. **Build for production**
-   ```bash
-   npm run build
-   ```
-
-## 📚 Documentation
-
-### JNI Layer
-The JNI layer bridges Java/Kotlin code with C++ OpenCV processing:
-- `ImageProcessorNative.java` - Java interface
-- `native-lib.cpp` - JNI implementation
-- `ImageProcessor.cpp` - OpenCV processing logic
 
 ### OpenCV Processing
 OpenCV algorithms implemented:
@@ -162,19 +115,3 @@ OpenGL ES 2.0 implementation:
 - Texture mapping
 - Real-time rendering pipeline
 
-## 🤝 Contributing
-
-1. Fork the repository
-2. Create a feature branch
-3. Commit your changes
-4. Push to the branch
-5. Create a Pull Request
-
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## 🙏 Acknowledgments
-
-- OpenCV team for the computer vision library
-- Android documentation for Camera2 API guidance
