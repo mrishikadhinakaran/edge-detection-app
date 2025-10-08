@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Edge Detection</string>
+    <string name="toggle_camera">Toggle Camera</string>
+    <string name="toggle_filter">Toggle Filter</string>
+    <string name="raw_feed">Raw Feed</string>
+    <string name="edge_detection">Edge Detection</string>
+</resources>

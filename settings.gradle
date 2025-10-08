@@ -1,0 +1,2 @@
+rootProject.name = 'EdgeDetectionApp'
+include ':app'
